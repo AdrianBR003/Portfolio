@@ -1,11 +1,39 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main>
+    <section class="w-full mx-auto lg:w-[740px] py-44">
+      <img 
+        class="rounded-full h-20 w-20 mb-4"
+        src="https://media.licdn.com/dms/image/v2/D4D03AQGCiohnoyCcEA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677164616677?e=2147483647&v=beta&t=MoAHeYomQALO4Lm2fwZXicucGZSS0lOe1hASWo3Ku4U"
+        alt="Logo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-5">
+        Hey, soy Adrian Benitez!
+        <a
+          class="flex justify-center items-center"
+          href="https://es.linkedin.com/in/adri%C3%A1n-ben%C3%ADtez-rold%C3%A1n-020400218"
+          target="_blank"
+          rel="noopener"
+        >
+          <Badge>Disponible</Badge>
+        </a>
+      </h1>
+      <h2 class="opacity-80 text-xl flex flex-col gap-y-2">
+        <p>
+          Soy estudiante de Ingenería Telemática en la Escuela Politécnica
+          Superior de Linares (UJA)
+        </p>
+        <p>
+          Estoy comenzando en el desarrollo con Kotlin, Astro, Angular y
+          SpringBoot!
+        </p>
+      </h2>
+
+      <ul></ul>
+    </section>
+  </main>
 </Layout>
