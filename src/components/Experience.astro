@@ -1,0 +1,25 @@
+---
+import ExperiencieItem from "./ExperiencieItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: "Abril 2024 - Junio 2024",
+        title: "Profesor de Programación en Java, Academia Sinestesia - Linares (Jaén, España)",
+        description: "Profesor de Programación en Java para estudiantes del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web (DAW)."
+    },
+
+]
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+    {
+        EXPERIENCE.map(experiencie => (
+            <li class="mb-10 ms-4">
+                <ExperiencieItem {...experiencie}/>
+            </li>
+        ))
+    }
+    
+</ol>
+

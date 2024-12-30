@@ -8,6 +8,9 @@ import IconKotlin from "../components/icons/IconKotlin.astro";
 import IconPython from "../components/icons/IconPython.astro";
 import IconAstro from "../components/icons/IconAstro.astro";
 import IconMail from "../components/icons/IconMail.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import IconBriefCase from "../components/icons/IconBriefCase.astro";
 ---
 
 <Layout
@@ -15,7 +18,7 @@ import IconMail from "../components/icons/IconMail.astro";
   description="Correo de Contacto: benroladrian@gmail.com"
 >
   <main>
-    <section class="w-full mx-auto lg:w-[740px] py-44">
+    <SectionContainer class="py-40 pb-10">
       <img
         class="rounded-full size-20 mb-4"
         src="https://media.licdn.com/dms/image/v2/D4D03AQGCiohnoyCcEA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677164616677?e=2147483647&v=beta&t=MoAHeYomQALO4Lm2fwZXicucGZSS0lOe1hASWo3Ku4U"
@@ -32,9 +35,9 @@ import IconMail from "../components/icons/IconMail.astro";
           <Badge>Disponible</Badge>
         </a>
       </h1>
-      <h2 class="opacity-80 text-xl flex flex-col gap-y-2">
+      <h2 class="opacity-80 text-xl flex flex-col gap-y-3">
         <p>
-          Soy estudiante de <span class="text-yellow-300"
+          Estudiante de <span class="text-yellow-300"
             >Ingenería Telemática</span
           >📡 en la Escuela Politécnica Superior de Linares - <span
             class="text-green-500 font-semibold">UJA</span
@@ -48,12 +51,12 @@ import IconMail from "../components/icons/IconMail.astro";
             <IconPython class="size-8 ml-2"/>
             Python
             <IconAstro class="size-8 ml-2"/>
-            Astro
+            Astro 
           </p>
         </h3>
       </h2>
 
-      <nav class="flex gap-x-2 mt-5 space-x-4">
+      <nav class="flex gap-x-2 mt-6 space-x-4">
         <SocialPill href="https://github.com/AdrianBR003">
           <IconGithub class="size-6" />
           Github
@@ -67,6 +70,15 @@ import IconMail from "../components/icons/IconMail.astro";
           benroladrian@gmail.com
         </SocialPill>
       </nav>
-    </section>
+    </SectionContainer>
+
+    <SectionContainer class="flex-row md:flex-row md:items-center md:space-x-3.5 pt-2">
+      <h2 class="text-2xl font-semibold flex gap-x-2 items-end">
+      <IconBriefCase class="size-8"/>
+      <span>Experiencia Laboral</span>
+      </h2>
+      <Experience/>
+    </SectionContainer>
+
   </main>
 </Layout>
