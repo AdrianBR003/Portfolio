@@ -1,14 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
-import { siKotlin, siCplusplus} from "simple-icons/icons";
+import IconGithub from "../components/icons/IconGithub.astro";
+import SocialPill from "../components/SocialPill.astro";
+import IconLinkedin from "../components/icons/IconLinkedin.astro";
+import IconKotlin from "../components/icons/IconKotlin.astro";
+import IconPython from "../components/icons/IconPython.astro";
+import IconAstro from "../components/icons/IconAstro.astro";
+import IconMail from "../components/icons/IconMail.astro";
 ---
 
-<Layout>
+<Layout
+  title="Portfolio de Adrián Benítez Roldán, estudiante de Ingeniería Telemática y desarrollador de Kotlin, Python y Astro"
+  description="Correo de Contacto: benroladrian@gmail.com"
+>
   <main>
     <section class="w-full mx-auto lg:w-[740px] py-44">
       <img
-        class="rounded-full h-20 w-20 mb-4"
+        class="rounded-full size-20 mb-4"
         src="https://media.licdn.com/dms/image/v2/D4D03AQGCiohnoyCcEA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677164616677?e=2147483647&v=beta&t=MoAHeYomQALO4Lm2fwZXicucGZSS0lOe1hASWo3Ku4U"
         alt="Logo"
       />
@@ -27,32 +36,37 @@ import { siKotlin, siCplusplus} from "simple-icons/icons";
         <p>
           Soy estudiante de <span class="text-yellow-300"
             >Ingenería Telemática</span
-          > en la Escuela Politécnica Superior de Linares - <span
+          >📡 en la Escuela Politécnica Superior de Linares - <span
             class="text-green-500 font-semibold">UJA</span
           >
         </p>
         <h3 class="opacity-80 text-xl flex flex-col gap-y-2">
-          <p>
-            <p>
-              Estoy comenzando en el desarrollo con
-              <span
-                class="inline-block h-6 w-6 ml-1 align-text-bottom"
-                set:html={siKotlin.svg}
-                style={`fill: ${"#7F52FF"};`}
-              />
-              -
-              <span
-                class="inline-block h-7 w-7 ml-1 align-text-bottom"
-                set:html={siCplusplus.svg}
-                style={`fill: ${"#A8B9CC"};`}
-              />
-              -
-            </p>
+          <p class="flex items-center">
+            Estoy comenzando en el desarrollo con: 
+            <IconKotlin class="size-8 ml-2"/>
+            Kotlin
+            <IconPython class="size-8 ml-2"/>
+            Python
+            <IconAstro class="size-8 ml-2"/>
+            Astro
           </p>
         </h3>
-
-        <ul></ul>
       </h2>
+
+      <nav class="flex gap-x-2 mt-5 space-x-4">
+        <SocialPill href="https://github.com/AdrianBR003">
+          <IconGithub class="size-6" />
+          Github
+        </SocialPill>
+        <SocialPill href="https://es.linkedin.com/in/adri%C3%A1n-ben%C3%ADtez-rold%C3%A1n-020400218">
+          <IconLinkedin class="size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://mail.google.com/mail/?view=cm&fs=1&to=benroladrian@gmail.com">
+          <IconMail class="size-6" />
+          benroladrian@gmail.com
+        </SocialPill>
+      </nav>
     </section>
   </main>
 </Layout>
