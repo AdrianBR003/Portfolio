@@ -17,14 +17,14 @@ import IconBriefCase from "../components/icons/IconBriefCase.astro";
   title="Portfolio de Adrián Benítez Roldán, estudiante de Ingeniería Telemática y desarrollador de Kotlin, Python y Astro"
   description="Correo de Contacto: benroladrian@gmail.com"
 >
-  <main>
-    <SectionContainer class="py-40 pb-10">
+  <main class="px-20">
+    <SectionContainer class="py-40 pb-20">
       <img
         class="rounded-full size-20 mb-4"
         src="https://media.licdn.com/dms/image/v2/D4D03AQGCiohnoyCcEA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677164616677?e=2147483647&v=beta&t=MoAHeYomQALO4Lm2fwZXicucGZSS0lOe1hASWo3Ku4U"
         alt="Logo"
       />
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-5">
+      <h1 class="text-white text-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-5">
         Hey, soy Adrian Benitez!
         <a
           class="flex justify-center items-center"
@@ -35,44 +35,46 @@ import IconBriefCase from "../components/icons/IconBriefCase.astro";
           <Badge>Disponible</Badge>
         </a>
       </h1>
-      <h2 class="opacity-80 text-xl flex flex-col gap-y-3">
+      <h2 class="opacity-80 text-xl lg:text-xl flex flex-col gap-y-3 max-w-[700px]">
         <p>
-          Estudiante de <span class="text-yellow-300"
-            >Ingenería Telemática</span
-          >📡 en la Escuela Politécnica Superior de Linares - <span
-            class="text-green-500 font-semibold">UJA</span
-          >
+          Estudiante de <span class="text-yellow-300">Ingeniería Telemática</span> 📡 en la Escuela Politécnica Superior de Linares, 
+          <span class="text-green-500 font-semibold">UJA</span>
         </p>
-        <h3 class="opacity-80 text-xl flex flex-col gap-y-2">
-          <p class="flex items-center">
-            Estoy comenzando en el desarrollo con: 
-            <IconKotlin class="size-8 ml-2"/>
-            Kotlin
-            <IconPython class="size-8 ml-2"/>
-            Python
-            <IconAstro class="size-8 ml-2"/>
-            Astro 
+        <h3 class="opacity-80 text-xl lg:text-xl flex flex-col sm:flex-row sm:items-center gap-y-2 sm:gap-x-4">
+          <p class="flex flex-wrap items-center gap-x-4 gap-y-2 text-center lg:text-left">
+            Estoy comenzando en el desarrollo con:
+            <span class="flex items-center gap-2">
+              <IconKotlin class="size-6" /> Kotlin
+            </span>
+            <span class="flex items-center gap-2">
+              <IconPython class="size-6" /> Python
+            </span>
+            <span class="flex items-center gap-2">
+              <IconAstro class="size-6" /> Astro
+            </span>
           </p>
         </h3>
       </h2>
+      
 
-      <nav class="flex gap-x-2 mt-6 space-x-4">
-        <SocialPill href="https://github.com/AdrianBR003">
-          <IconGithub class="size-6" />
+      <nav class="flex gap-4 mt-6 flex-wrap justify-start">
+        <SocialPill class="text-sm px-3 py-1" href="https://github.com/AdrianBR003">
+          <IconGithub class="size-4" />
           Github
         </SocialPill>
-        <SocialPill href="https://es.linkedin.com/in/adri%C3%A1n-ben%C3%ADtez-rold%C3%A1n-020400218">
-          <IconLinkedin class="size-6" />
+        <SocialPill class="text-sm px-3 py-1" href="https://es.linkedin.com/in/adri%C3%A1n-ben%C3%ADtez-rold%C3%A1n-020400218">
+          <IconLinkedin class="size-4" />
           LinkedIn
         </SocialPill>
-        <SocialPill href="https://mail.google.com/mail/?view=cm&fs=1&to=benroladrian@gmail.com">
-          <IconMail class="size-6" />
-          benroladrian@gmail.com
+        <SocialPill class="text-sm px-3 py-1" href="https://mail.google.com/mail/?view=cm&fs=1&to=benroladrian@gmail.com">
+          <IconMail class="size-4" />
+          Email
         </SocialPill>
       </nav>
+      
     </SectionContainer>
 
-    <SectionContainer class="flex-row md:flex-row md:items-center md:space-x-3.5 pt-2">
+    <SectionContainer id="experiencia"class="flex-row md:flex-row md:items-center md:space-x-3.5">
       <h2 class="text-2xl font-semibold flex gap-x-2 items-end">
       <IconBriefCase class="size-8"/>
       <span>Experiencia Laboral</span>

@@ -1,5 +1,4 @@
 ---
-import { date } from "astro:schema";
 
 export interface ExperiencieItemProps {
   date: string;
@@ -7,7 +6,7 @@ export interface ExperiencieItemProps {
   description: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, date } = Astro.props;
 ---
 
 <li class="mb-10 ms-4">
