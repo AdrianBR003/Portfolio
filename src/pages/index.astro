@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
+import { siKotlin, siCplusplus} from "simple-icons/icons";
 ---
 
 <Layout>
   <main>
     <section class="w-full mx-auto lg:w-[740px] py-44">
-      <img 
+      <img
         class="rounded-full h-20 w-20 mb-4"
         src="https://media.licdn.com/dms/image/v2/D4D03AQGCiohnoyCcEA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677164616677?e=2147483647&v=beta&t=MoAHeYomQALO4Lm2fwZXicucGZSS0lOe1hASWo3Ku4U"
         alt="Logo"
@@ -24,16 +25,34 @@ import Badge from "../components/Badge.astro";
       </h1>
       <h2 class="opacity-80 text-xl flex flex-col gap-y-2">
         <p>
-          Soy estudiante de Ingenería Telemática en la Escuela Politécnica
-          Superior de Linares (UJA)
+          Soy estudiante de <span class="text-yellow-300"
+            >Ingenería Telemática</span
+          > en la Escuela Politécnica Superior de Linares - <span
+            class="text-green-500 font-semibold">UJA</span
+          >
         </p>
-        <p>
-          Estoy comenzando en el desarrollo con Kotlin, Astro, Angular y
-          SpringBoot!
-        </p>
-      </h2>
+        <h3 class="opacity-80 text-xl flex flex-col gap-y-2">
+          <p>
+            <p>
+              Estoy comenzando en el desarrollo con
+              <span
+                class="inline-block h-6 w-6 ml-1 align-text-bottom"
+                set:html={siKotlin.svg}
+                style={`fill: ${"#7F52FF"};`}
+              />
+              -
+              <span
+                class="inline-block h-7 w-7 ml-1 align-text-bottom"
+                set:html={siCplusplus.svg}
+                style={`fill: ${"#A8B9CC"};`}
+              />
+              -
+            </p>
+          </p>
+        </h3>
 
-      <ul></ul>
+        <ul></ul>
+      </h2>
     </section>
   </main>
 </Layout>
