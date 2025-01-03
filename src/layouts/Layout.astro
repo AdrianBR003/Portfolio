@@ -20,12 +20,8 @@ import "@fontsource-variable/onest";
     <meta name="description" content={description} />
     <title>{title}</title>
   </head>
-
   <body>
-    <div
-      class="background"
-    >
-    </div>
+    <div class="background"></div>
     <Header />
     <slot />
   </body>
@@ -34,13 +30,6 @@ import "@fontsource-variable/onest";
 <style>
   :root {
     color-scheme: dark light;
-  }
-
-  html,
-  body {
-    height: 100%; /* Elimina el problema de altura */
-    margin: 0;
-    padding: 0;
   }
 
   html {
@@ -61,17 +50,14 @@ import "@fontsource-variable/onest";
   }
 
   body {
-    min-height: 100vh; /* Asegura que el cuerpo cubra toda la altura del viewport */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0;
     background: #050505;
-    position: relative;
-    overflow-x: hidden; /* Elimina posibles scrolls laterales */
+    overflow-x: hidden;
+    padding: 30px;
   }
 
   .background {
-    position: fixed; /* Mantiene el fondo siempre en su lugar */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

@@ -13,12 +13,12 @@ import SectionContainer from "../components/SectionContainer.astro";
 import IconBriefCase from "../components/icons/IconBriefCase.astro";
 ---
 
-<Layout
+<Layout 
   title="Portfolio de Adrián Benítez Roldán, estudiante de Ingeniería Telemática y desarrollador de Kotlin, Python y Astro"
   description="Correo de Contacto: benroladrian@gmail.com"
 >
-  <main class="px-20">
-    <SectionContainer class="py-40 pb-20">
+  <main class="px-30 mt-10">
+    <SectionContainer class="py-20 pb-10 scroll-mt-16">
       <img
         class="rounded-full size-20 mb-4"
         src="https://media.licdn.com/dms/image/v2/D4D03AQGCiohnoyCcEA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677164616677?e=2147483647&v=beta&t=MoAHeYomQALO4Lm2fwZXicucGZSS0lOe1hASWo3Ku4U"
@@ -41,7 +41,7 @@ import IconBriefCase from "../components/icons/IconBriefCase.astro";
           <span class="text-green-500 font-semibold">UJA</span>
         </p>
         <h3 class="opacity-80 text-xl lg:text-xl flex flex-col sm:flex-row sm:items-center gap-y-2 sm:gap-x-4">
-          <p class="flex flex-wrap items-center gap-x-4 gap-y-2 lg:text-left">
+          <p class="flex flex-wrap items-center gap-x-4 gap-y-2  lg:text-left">
             Estoy comenzando en el desarrollo con:
             <span class="flex items-center gap-2">
               <IconKotlin class="size-6" /> Kotlin
@@ -74,7 +74,7 @@ import IconBriefCase from "../components/icons/IconBriefCase.astro";
       
     </SectionContainer>
 
-    <SectionContainer id="experiencia"class="flex-row md:flex-row md:items-center md:space-x-3.5">
+    <SectionContainer id="experiencia"class="flex-row scroll-mt-16 md:flex-row md:items-center md:space-x-3.5">
       <h2 class="text-2xl font-semibold flex gap-x-2 items-end">
       <IconBriefCase class="size-8"/>
       <span>Experiencia Laboral</span>
@@ -82,5 +82,30 @@ import IconBriefCase from "../components/icons/IconBriefCase.astro";
       <Experience/>
     </SectionContainer>
 
+    <SectionContainer id="experiencia2"class="flex-row scroll-mt-16 md:flex-row md:items-center md:space-x-3.5">
+      <h2 class="text-2xl font-semibold flex gap-x-2 items-end">
+      <IconBriefCase class="size-8"/>
+      <span>Experiencia Laboral</span>
+      </h2>
+      <Experience/>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia2"class="flex-row scroll-mt-16 md:flex-row md:items-center md:space-x-3.5">
+      <h2 class="text-2xl font-semibold flex gap-x-2 items-end">
+      <IconBriefCase class="size-8"/>
+      <span>Experiencia Laboral</span>
+      </h2>
+      <Experience/>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia2"class="flex-row scroll-mt-16 md:flex-row md:items-center md:space-x-3.5">
+      <h2 class="text-2xl font-semibold flex gap-x-2 items-end">
+      <IconBriefCase class="size-8"/>
+      <span>Experiencia Laboral</span>
+      </h2>
+      <Experience/>
+    </SectionContainer>
+
+    
   </main>
 </Layout>
